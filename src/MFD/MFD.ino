@@ -60,7 +60,7 @@ void loop() {
         //Serial.println("KEYDOWN");  
         keyStatus[i][j] = KEYDOWN;
         Joystick.setButton(currentButton, true);
-      } if (sensorVal == LOW && keyStatus[i][j] == KEYDOWN) {
+      } else if (sensorVal == LOW && keyStatus[i][j] == KEYDOWN) {
         //Serial.print((String)"Button " + currentButton + " :"); 
         //Serial.println("KEYHOLD");
         keyStatus[i][j] = KEYHOLD;
